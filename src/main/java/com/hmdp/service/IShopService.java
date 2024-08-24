@@ -20,4 +20,11 @@ public interface IShopService extends IService<Shop> {
      * @return 商铺详情数据
      */
     Result querById(Long id);
+
+    /**
+     * 更新商铺信息
+     * @param shop
+     * @return
+     */
+    Result update(Shop shop);
 }
