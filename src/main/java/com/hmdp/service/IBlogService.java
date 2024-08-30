@@ -27,4 +27,18 @@ public interface IBlogService extends IService<Blog> {
      * @return
      */
     Result queryBlogById(Long id);
+
+    /**
+     * 利用redis实现点赞功能
+     * @param id
+     * @return
+     */
+    Result likeBlog(Long id);
+
+    /**
+     * 根据blogid查询点赞的用户列表
+     * @param id
+     * @return
+     */
+    Result queryBlogLikes(Long id);
 }
